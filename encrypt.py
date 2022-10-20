@@ -2,7 +2,8 @@ text = {} #Give your dictionary of websites and respective passwords
 # translated = ('')
 # for j in message:
 alphabets = 'abcdefghijklmnopqrstuvwxyz'
-def encrypt_caesar(num, text):
+# for i in alphabet:
+def encrypt(num, text):
  results = ' '
  for k in text.lower():
   try:
@@ -11,7 +12,7 @@ def encrypt_caesar(num, text):
   except ValueError:
    results+= k
  return results.lower()
-num = 17
+num = #shift value
 for key in text:
-   ciphertext = encrypt_caesar(num, text[key])
+   ciphertext = encrypt(num, text[key])
    print(key,ciphertext)
